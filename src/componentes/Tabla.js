@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import data from ".data.js";
+import data from "./data.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
     Table,
@@ -46,7 +46,6 @@ mostrarModalActualizar = (dato) => {
     this.setState({ modalInsertar: false });
   };
 
-  
   editar = (dato) => {
     var contador = 0;
     var arreglo = this.state.data;
@@ -54,6 +53,7 @@ mostrarModalActualizar = (dato) => {
       if (dato.id == registro.id) {
         arreglo[contador].nombre = dato.nombre;
         arreglo[contador].descripcion = dato.descripcion;
+        arreglo[contador].valor = dato.valor;
       }
       contador++;
     });
@@ -82,6 +82,16 @@ mostrarModalActualizar = (dato) => {
     lista.push(valorNuevo);
     this.setState({ modalInsertar: false, data: lista });
   }
+
+  
+  handleChange = (e) => {
+    this.setState({
+      form: {
+        ...this.state.form,
+        [e.target.name]: e.target.value,
+      },
+    });
+  };
     render() {
         return (
             <>
@@ -157,7 +167,7 @@ mostrarModalActualizar = (dato) => {
             
             <FormGroup>
                 <label>
-                Descripcion: 
+                Descripcion:
                 </label>
                 <input
                 className="form-control"
@@ -170,14 +180,14 @@ mostrarModalActualizar = (dato) => {
 
             <FormGroup>
                 <label>
-                Valor: 
+                Valor:
                 </label>
                 <input
                 className="form-control"
-                name="descripcion"
+                name="valor"
                 type="text"
                 onChange={this.handleChange}
-                value={this.state.form.descripcion}
+                value={this.state.form.valor}
                 />
             </FormGroup>
             </ModalBody>
@@ -249,7 +259,7 @@ mostrarModalActualizar = (dato) => {
                 </label>
                 <input
                 className="form-control"
-                name="descripcion"
+                name="valor"
                 type="text"
                 onChange={this.handleChange}
                 />
