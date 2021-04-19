@@ -13,5 +13,7 @@ urlpatterns = [
     path('form/', homeview.form, name = 'Formulario'),
     path('registercompany/', FormCompanyView.index, name = 'Registrar Compañía'),
     path('savecompany', FormCompanyView.process_form, name = 'Guardar Compañía'),
+    path('views/detalle.html/', FormCompanyView.detalles, name = 'detalles'),
+    path('views/index.html/', FormCompanyView.views_index, name = 'detalles'),
 ]
 #al url le hace falta un argumento posicional, que es la vista

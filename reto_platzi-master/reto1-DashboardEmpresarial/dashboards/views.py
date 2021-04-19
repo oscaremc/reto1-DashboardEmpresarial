@@ -30,3 +30,11 @@ class FormCompanyView(HttpRequest):
             "CompanyIndex.html",
             {"form":company},
             {"mensaje":'OK'})
+        
+    def detalles(request):
+        detalle = CompanyForm()
+        return render (request, "detalle.html", {"form":detalle})
+
+    def views_index(request):
+        views_index = CompanyForm()
+        return render (request, "index.html", {"form":views_index})
