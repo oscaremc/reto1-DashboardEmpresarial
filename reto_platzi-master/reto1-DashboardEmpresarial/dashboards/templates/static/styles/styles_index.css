@@ -6,6 +6,7 @@
 html{
     font-size: 62.5%;
     background-color: #F2EDA2;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .menu{
     display: flex;
@@ -14,7 +15,7 @@ html{
 header{
     height: 10vh;
     padding-left: 15px;
-    white-space: pre-line; 
+    white-space: pre-line;
 }
 .menu nav {
     background-color: #D9D2D2;
@@ -44,6 +45,8 @@ main .container-main--titulo{
     justify-content: center;
     align-self: center;
     height: 90px;
+    font-size: 16px;
+    font-weight: 400;
 }
 main .container-main--titulo h2 {
     margin: auto;
@@ -91,8 +94,17 @@ main .container-grafica {
 .grafica-cabecera-descripcion{
     margin: 10px 0;
     padding: 10px;
+    font-size: 14px;
+    font-weight: 400;
 }
-.menu nav .mas  button{
+.grafica-cabecera-uuid {
+    font-size: 14px;
+    font-weight: 700;
+}
+.grafica-cabecera-uuid h3 {
+    margin-left: 20px;
+}
+.menu nav .mas  .buttonCrear{
     background: none;
     border-radius: 50%;
     border-style: solid;
@@ -100,9 +112,7 @@ main .container-grafica {
     background-color: #F2E205;
     box-shadow: 1px 1px 2px #000;
     padding: 5px;
-}
-.menu nav .mas button img {
-    color: #F2E205;
+    width: 40px;
 }
 .menu nav .mas img {
     width: 28px;
@@ -114,10 +124,30 @@ nav .button button {
     border: none;
     padding: 8px;
 }
+nav li a {
+    text-decoration: none;
+}
 nav li .edit {
+    margin: auto;
     background-color: rgb(4, 4, 192);
     color: white;
     box-shadow: 1px 1px 1px #000;
+    width: 60px;
+    border-radius: 3px;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+}
+nav li .home {
+    margin: auto;
+    background-color: green;
+    color: white;
+    box-shadow: 1px 1px 1px #000;
+    width: 60px;
+    border-radius: 3px;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
 }
 nav li .eliminar {
     background-color: rgb(207, 5, 5);

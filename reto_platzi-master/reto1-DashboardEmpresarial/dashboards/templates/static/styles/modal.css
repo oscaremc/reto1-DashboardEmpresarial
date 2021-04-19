@@ -1,20 +1,12 @@
 *{
     box-sizing: border-box;
 }
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
 .modal_editar {
     display: flex;
-    position: absolute;
-    z-index: 5;
-    border: solid;
-    background-color: rgba(0, 0, 0, 0.9);
-    width: 100vw;
-    height: 90vh;
-    opacity: 0;
-    pointer-events: none;
-}
-.show{
-    pointer-events: auto;
-    opacity: 1;
 }
 .contenedor-editar{
     position: relative;
@@ -23,7 +15,7 @@
     flex-direction: column;
     text-align: center;
     background-color: white;
-    margin: auto;
+    margin:  20px auto;
     align-items: center;
     padding: 30px 50px;
     width: 600px;
@@ -76,4 +68,15 @@
     width: 600px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px #000;
+}
+nav li .home {
+    margin: auto;
+    background-color: green;
+    color: white;
+    box-shadow: 1px 1px 1px #000;
+    width: 60px;
+    border-radius: 3px;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
 }
