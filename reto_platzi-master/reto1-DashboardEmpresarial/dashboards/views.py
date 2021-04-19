@@ -29,7 +29,7 @@ class FormCompanyView(HttpRequest):
             request,
             "CompanyIndex.html",
             {"form":company},
-            {"mensaje":'OK'})
+            {"mensaje":'OK'}),
         
     def detalles(request):
         detalle = CompanyForm()

@@ -8,8 +8,7 @@
     <title>Dashboard Empresarial</title>
     <link rel="stylesheet" href="{% static '/styles/modal.css'%}">
     <link rel="stylesheet" href="{% static '/styles/styles_tabla.css'%}">
-    <link rel="stylesheet" href="/styles/styles_tabla_tablet.css" media="(max-width: 920px)">
-    <link rel="stylesheet" href="/styles/styles_tabla_movil.css" media="(max-width: 426px)">
+    <link rel="stylesheet" href="/styles/styles_index_movil.css" media="(max-width: 426px)">
     <link rel = "preconnect" href = "https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
@@ -17,22 +16,22 @@
 <body>
     <header>
         <h1>Dashboard Empresarial</h1>
+        <div class="bordetitulo"></div>
     </header>
     <section class="menu">
         <nav>
             <ul>
-                
                 <li title="Ir al Home">
-                    <a href="/views/index.html">
-                        <p class="home">Home</p>
+                    <a href="/views/index.html" >
+                        <p class="botton home">Home</p>
                     </a>
                 </li>
                 <li></li>
                 <li></li>
                 <li><a href=""></a></li>
-                <li class="mas">
-                    <a href="./crear.html" class="button">
-                        <img class="buttonCrear" src="https://img.icons8.com/ios-glyphs/50/000000/plus-math.png" title="Agregar Nueva empresa">
+                <li>
+                    <a href="./crear.html">
+                        <img class="bottonMas" class="buttonCrear" src="https://img.icons8.com/ios-glyphs/50/000000/plus-math.png" title="Agregar Nueva empresa">
                     </a>
                 </li>
                 <li></li>
@@ -48,12 +47,12 @@
                         </div>
                         <div class="tabla-card-uuid">
                             <label for="">
-                                Codigo:
+                                Codigo :
                             </label>
                             <H3>GR89-GR9R-GRI3-35KG</H3>
                         </div>
                         <div class="tabla-card-descripcion">
-                            <label for="">Detalle</label>
+                            <label for="">Detalle :</label>
                             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptatem quis provident natus architecto minus? Sint sequi deleniti, explicabo cum omnis eligendi tempora delectus architecto.</h4>
                         </div>
                         <div class="boton"><a href="/views/detalle.html">Ver Grafica</a></div>
@@ -62,6 +61,5 @@
             </section>
         </main>
     </section>
-    <script src="/app.js"></script>
 </body>
 </html>
