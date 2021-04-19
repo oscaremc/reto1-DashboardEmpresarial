@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    background-color: #F2EDA2;
+}
+.menu{
+    display: flex;
+    background-color: #F2F0CE;
+}
+header{
+    height: 10vh;
+    padding-left: 15px;
+    white-space: pre-line; 
+}
+.menu nav {
+    background-color: #D9D2D2;
+}
+.menu nav ul{
+    width: 10vw;
+    height: 90vh;
+    max-width: 75px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+main .container-main {
+    width:90vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+main .container--main--texto{
+    grid-column: 1 / 3;
+    grid-row: 1 / 6;
+}
+main .container-main--titulo{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 90px;
+}
+main .container-main--titulo h2 {
+    margin: auto;
+}
+.container-main--valores{
+    width: 90%;
+    max-width: 320px;
+    grid-column: 1 / 3;
+    grid-row: 2 / 6;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.main-valores-card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.main-valores-card table td {
+    border-bottom: 1px solid rgb(177, 177, 177);
+    width: 70%;
+}
+.main-valores-card table{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+main .container-grafica {
+    grid-column: 3 / 6;
+    grid-row: 1 / 6;
+}
+.container-grafica-cabecera{
+    grid-column: 3 / 6 ;
+    grid-row: 1 / 2;
+}
+.container-main .grafica {
+    grid-column: 3 / 6;
+    grid-row: 2 / 6;
+}
+.grafica-cabecera-uuid {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.grafica-cabecera-descripcion{
+    margin: 10px 0;
+    padding: 10px;
+}
+.menu nav .mas  button{
+    background: none;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #F2E205;
+    background-color: #F2E205;
+    box-shadow: 1px 1px 2px #000;
+    padding: 5px;
+}
+.menu nav .mas button img {
+    color: #F2E205;
+}
+.menu nav .mas img {
+    width: 28px;
+    background-color: none;
+}
+nav .button button {
+    width: 60px;
+    border-radius: 3px;
+    border: none;
+    padding: 8px;
+}
+nav li .edit {
+    background-color: rgb(4, 4, 192);
+    color: white;
+    box-shadow: 1px 1px 1px #000;
+}
+nav li .eliminar {
+    background-color: rgb(207, 5, 5);
+    color: white;
+    box-shadow: 1px 1px 1px #000;
+}

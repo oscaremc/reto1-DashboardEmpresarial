@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    background-color: #F2EDA2;
+}
+header{
+    height: 10vh;
+    padding-left: 15px;
+    white-space: pre-line;
+}
+.menu{
+    display: flex;
+    background-color: #F2F0CE;
+}
+.menu nav {
+    background-color: #D9D2D2;
+}
+.menu nav ul{
+    width: 10vw;
+    height: 90vh;
+    max-width: 75px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.menu nav li {
+    cursor: pointer;
+}
+main .container-main {
+    width:90vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 10%, auto, 10px;
+
+}
+main .container-main-tabla {
+    
+    width: 100%;
+    max-width: 500px;
+    grid-column: 2;
+}
+.main-tabla--card{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    border-radius: 7px;
+    height: 20vh;
+    margin: 10px 0;
+    background-color: #D0D2F2;
+}
+.tabla-card-titulo{
+    display: flex;
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+    
+}
+.tabla-card-uuid{
+    display: flex;
+    grid-column: 5 / 9;
+    grid-row: 2 / 3;
+}
+.tabla-card-titulo h3, .tabla-card-uuid h3 {
+    margin-left: 10px;
+}
+.tabla-card-descripcion{
+    grid-column: 2 / 8;
+    grid-row: 4 / 7;
+    text-align: justify;
+}
+.tabla-card-descripcion h4 {
+    padding: 10px;
+}
+.boton{
+    grid-column: 8 / 9;
+    grid-row: 3 / 5;
+    background-color: #F2E205;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12px;
+    width: 80px;
+    margin: 5px 0;
+    text-align: center;
+}
+.boton a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.menu nav .mas  button{
+    background: none;
+    border-radius: 50%;
+    border-color: rgba(0, 0, 0, 0.9);
+    padding: 5px;
+}
+.menu nav .mas img {
+    width: 28px;
+    background-color: none;
+}
+.menu nav .mas  button{
+    background: none;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #F2E205;
+    background-color: #F2E205;
+    box-shadow: 1px 1px 2px #000;
+    padding: 5px;
+}
+.menu nav .mas button img {
+    color: #F2E205;
+}
