@@ -38,3 +38,11 @@ class FormCompanyView(HttpRequest):
     def views_index(request):
         views_index = CompanyForm()
         return render (request, "index.html", {"form":views_index})
+
+    def views_crear(request):
+        views_crear = CompanyForm()
+        return render (request, "crear.html", {"form":views_crear})
+        
+    def views_editar(request):
+        views_editar = CompanyForm()
+        return render (request, "editar.html", {"form":views_editar})
