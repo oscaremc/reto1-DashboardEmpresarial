@@ -20,7 +20,6 @@
     <section class="menu">
         <nav>
             <ul>
-                
                 <li title="Ir al Home">
                     <a href="/views/index.html">
                         <p class="home">Home</p>
@@ -31,7 +30,7 @@
                 <li><a href=""></a></li>
                 <li class="mas">
                     <a href="./crear.html" class="button">
-                        <img class="buttonCrear" src="https://img.icons8.com/ios-glyphs/50/000000/plus-math.png" title="Agregar Nueva empresa">
+                        <img src="https://img.icons8.com/ios-glyphs/50/000000/plus-math.png" title="Agregar Nueva empresa">
                     </a>
                 </li>
                 <li></li>
@@ -40,23 +39,28 @@
         <main>
             <section class="container-main">
                 <section class="container-main-tabla">
-                    <div class="main-tabla--card">
-                        <div class="tabla-card-titulo">
-                            <label for=""> Nombre :</label>
-                            <h3>Empresa inc</h3>
-                        </div>
-                        <div class="tabla-card-uuid">
-                            <label for="">
-                                Codigo:
-                            </label>
-                            <H3>GR89-GR9R-GRI3-35KG</H3>
-                        </div>
-                        <div class="tabla-card-descripcion">
-                            <label for="">Detalle</label>
-                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptatem quis provident natus architecto minus? Sint sequi deleniti, explicabo cum omnis eligendi tempora delectus architecto.</h4>
-                        </div>
-                        <div class="boton"><a href="/views/detalle.html">Ver Grafica</a></div>
-                    </div>
+                    <section id="modal_editar" class="modal_editar">
+                        <form action="" method="">
+                            <div class="contenedor-editar">
+                                <h1>Editar informacion</h1>
+                                <label for="">
+                                    Codigo :
+                                    <h2>J4J4-654K-GTI2-DGI9</h2>
+                                </label>
+                                <label for="">
+                                    Nombre de la empresa
+                                    <input type="text" required class="nombre" placeholder="Escribe aqui el nombre de la empresa">
+                                </label>
+                                <label for="">
+                                    Descripcion de la Empresa
+                                    <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Escribe una breve descripcion de la empresa"></textarea>
+                                </label>
+                                <button id="close">
+                                    Guardad
+                                </button>
+                            </div>
+                        </form>
+                    </section>
                 </section>
             </section>
         </main>

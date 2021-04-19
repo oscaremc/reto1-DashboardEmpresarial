@@ -6,7 +6,6 @@
 html{
     font-size: 62.5%;
     background-color: #F2EDA2;
-    font-family: 'Roboto Condensed', sans-serif;
 }
 header{
     height: 10vh;
@@ -87,17 +86,6 @@ main .container-main-tabla {
     margin: 5px 0;
     text-align: center;
 }
-nav li .home {
-    margin: auto;
-    background-color: green;
-    color: white;
-    box-shadow: 1px 1px 1px #000;
-    width: 60px;
-    border-radius: 3px;
-    border: none;
-    padding: 8px;
-    font-size: 16px;
-}
 .boton a {
     text-decoration: none;
     color: black;
@@ -113,7 +101,7 @@ nav li .home {
     width: 28px;
     background-color: none;
 }
-.menu nav .mas  .buttonCrear{
+.menu nav .mas  button{
     background: none;
     border-radius: 50%;
     border-style: solid;
@@ -121,5 +109,7 @@ nav li .home {
     background-color: #F2E205;
     box-shadow: 1px 1px 2px #000;
     padding: 5px;
-    width: 40px;
+}
+.menu nav .mas button img {
+    color: #F2E205;
 }

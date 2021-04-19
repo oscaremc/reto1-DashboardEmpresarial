@@ -1,4 +1,4 @@
-{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Empresarial</title>
-    <link rel="stylesheet" href="{% static '/styles/styles_index.css' %}">
-    <link rel="stylesheet" href="{% static '/styles/modal.css' %}">
+    <link rel="stylesheet" href="/styles/styles_index.css">
+    <link rel="stylesheet" href="/styles/modal.css">
     <link rel="stylesheet" href="/styles/styles_index_tablet.css" media="(max-width: 920px)">
     <link rel="stylesheet" href="/styles/styles_index_movil.css" media="(max-width: 426px)">
     <script src = " https://code.highcharts.com/highcharts.js " > </script>
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -20,11 +23,15 @@
         <nav>
             <ul>
                 <ul>
-                    <li title="Estas Aqui!"><a href="/views/index.html">Home</a></li>
-                    <li class="button">
-                        <button id="editar" class="edit">
-                            Editar
-                        </button>
+                    <li title="Ir al Home">
+                        <a href="/views/index.html">
+                            <p class="home">Home</p>
+                        </a>
+                    </li>
+                    <li class="mas">
+                        <a href="./editar.html" class="button">
+                            <p class="edit">Editar</p>
+                        </a>
                     </li>
                     <li class="button">
                         <button id="eliminar" class="eliminar">
@@ -33,10 +40,11 @@
                     </li>
                     <li></li>
                     <li><a href=""></a></li>
-                    <li class="mas"><a href=""><button>
-                        <img src="https://img.icons8.com/ios-glyphs/50/000000/plus-math.png"/ title="Agregar Nueva empresa">
-                    </button>
-                    </a></li>
+                    <li class="mas">
+                        <a href="./crear.html" class="button">
+                            <img class="buttonCrear" src="https://img.icons8.com/ios-glyphs/50/000000/plus-math.png" title="Agregar Nueva empresa">
+                        </a>
+                    </li>
                     <li></li>
                 </ul>
             </ul>
@@ -283,35 +291,6 @@
                 </div>
             </section>
         </main>
-
-        <!-- ventana modal de editar  -->
-        <section id="modal_editar" class="modal_editar">
-            <div class="contenedor-editar">
-                <h1>Edita esta empresa</h1>
-                <label for="">
-                    Nombre de la empresa
-                    <input type="text" required class="nombre" placeholder="Nombre de la empresa">
-                </label>
-                <label for="">
-                    Descripcion de la Empresa
-                    <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Escribe una breve descripcion de la empresa"></textarea>
-                </label>
-                <button id="close">
-                    Guardad
-                </button>
-            </div>
-        </section>
-
-        <!-- ventana modal de Eliminar -->
-        <section id="modal_eliminar" class="modal_eliminar">
-            <div class="contenedor-eliminar">
-                <h1></h1>
-                <h3>Estas seguro que deseas realizar esta accion!</h3>
-                <button id="close">
-                    Eliminar
-                </button>
-            </div>
-        </section>
     </section>
     <script src="/app.js"></script>
     <script>
