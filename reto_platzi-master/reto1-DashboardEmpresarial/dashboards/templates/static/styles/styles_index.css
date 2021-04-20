@@ -41,6 +41,9 @@ header .bordetitulo {
     flex-direction: column;
     justify-content: space-around;
 }
+.menu nav li {
+    cursor: pointer;
+}
 main .container-main {
     width:90vw;
     height: 90vh;

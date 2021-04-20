@@ -6,23 +6,66 @@
 html{
     font-size: 62.5%;
 }
-header{
-    background-color: red;
-}
-.container-main .container--main--texto{
-    display: flex;
+main .container-main {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     width: 100%;
-    max-width: 900px;
-    height: 30vh;
-    margin: 0;
-    height:auto
+    height: auto;
 
 }
-section .container-main {
+.menu {
     display: block;
 }
-.container-grafica--lineas{
-    border: solid red;
+.menu nav{
+    display: inline-flex;
     width: 100%;
-    height: 300px;
+    background-color: transparent;
+}
+.menu nav ul {
+    display: inline-flex;
+    height: auto;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    max-width: 100%;
+}
+.menu nav ul li {
+    display: inline-flex;
+}
+.container-main--titulo p {
+    display: block;
+    height: auto;
+    width: 300px;
+}
+main .container--main--texto {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+
+}
+.container-main--titulo p {
+    height: auto;
+    width: auto;
+}
+.container-grafica-cabecera{
+    grid-column: 2 / 4;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+main .container-main .grafica {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+}
+main .container-main .grafica .grafo{
+    width: 90%;
+}
+main .container-main--valores {
+    grid-column: 1 / 2;
+    grid-row: 1;
 }
