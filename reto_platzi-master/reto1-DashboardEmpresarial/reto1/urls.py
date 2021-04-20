@@ -9,13 +9,10 @@ from dashboards.views import FormCompanyView
 #hay que regresar una instancia de HttpResponse con el contenido que nosotros queramos
 urlpatterns = [
     path('', homeview.home, name = 'home'),
-    path('dashboard/', homeview.dashboard, name='Dashboard'),
-    path('form/', homeview.form, name = 'Formulario'),
     path('registercompany/', FormCompanyView.index, name = 'Registrar Compañía'),
-    path('savecompany', FormCompanyView.process_form, name = 'Guardar Compañía'),
+    path('savecompany/', FormCompanyView.process_form, name = 'Guardar Compañía'),
     path('views/detalle.html/', FormCompanyView.detalles, name = 'detalles'),
     path('views/index.html/', FormCompanyView.views_index, name = 'detalles'),
     path('views/detalle.html/crear.html/', FormCompanyView.views_crear, name = 'crear'),
     path('views/detalle.html/editar.html', FormCompanyView.views_editar, name = 'editar'),
 ]
-#al url le hace falta un argumento posicional, que es la vista
