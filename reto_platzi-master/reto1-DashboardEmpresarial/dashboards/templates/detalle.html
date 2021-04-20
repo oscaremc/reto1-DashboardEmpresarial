@@ -1,3 +1,4 @@
+
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -6,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Empresarial</title>
-    <link rel="stylesheet" href="{% static '/styles/styles_index.css' %}">
-    <link rel="stylesheet" href="{% static '/styles/modal.css' %}">
-    <link rel="stylesheet" href="/styles/styles_index_tablet.css" media="(max-width: 920px)">
-    <link rel="stylesheet" href="/styles/styles_index_movil.css" media="(max-width: 426px)">
+    <link rel="stylesheet" href="{% static '/styles/styles_index.css'%}">
+    <link rel="stylesheet" href="{% static '/styles/modal.css'%}">
+    <link rel="stylesheet" href="{% static '/styles/styles_index_tablet.css' %}" media="(max-width: 920px)">
+    <link rel="stylesheet" href="{% static '/styles/styles_index_movil.css' %}" media="(max-width: 426px)">
     <script src = " https://code.highcharts.com/highcharts.js " > </script>
     <link rel = "preconnect" href = "https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,31 +19,32 @@
 <body>
     <header>
         <h1>Dashboard Empresarial</h1>
+        <div class="bordetitulo"></div>
     </header>
     <section class="menu">
         <nav>
             <ul>
                 <ul>
                     <li title="Ir al Home">
-                        <a href="/views/index.html">
-                            <p class="home">Home</p>
+                        <a href="/views/index.html" >
+                            <p class="botton home">Home</p>
                         </a>
                     </li>
-                    <li class="mas">
-                        <a href="./editar.html" class="button">
-                            <p class="edit">Editar</p>
+                    <li>
+                        <a href="/editar.html">
+                            <p class="botton editar">Editar</p>
                         </a>
                     </li>
-                    <li class="button">
-                        <button id="eliminar" class="eliminar">
-                            Eliminar
-                        </button>
+                    <li>
+                        <a href="/editar.html">
+                            <p class="botton eliminar">Eliminar</p>
+                        </a>
                     </li>
                     <li></li>
-                    <li><a href=""></a></li>
-                    <li class="mas">
-                        <a href="./crear.html" class="button">
-                            <img class="buttonCrear" src="https://img.icons8.com/ios-glyphs/50/000000/plus-math.png" title="Agregar Nueva empresa">
+                    <li></li>
+                    <li>
+                        <a href="/crear.html">
+                            <img class="bottonMas" class="buttonCrear" src="https://img.icons8.com/ios-glyphs/50/000000/plus-math.png" title="Agregar Nueva empresa">
                         </a>
                     </li>
                     <li></li>
@@ -53,7 +55,7 @@
             <section class="container-main">
                 <section class="container--main--texto">
                     <div class="container-main--titulo">
-                        <h2>TituloEmpresa</h2>
+                        <p>TituloEmpresa</p>
                     </div>
                 </section>
                 <section class="container-main--valores">
@@ -277,7 +279,7 @@
                 <div class="container-grafica-cabecera">
                     <div class="grafica-cabecera-uuid">
                         <label for="">Codigo: </label>
-                        <h3>RTR3L-3233-232G-23VR</h3>
+                        <p>RTR3L-3233-232G-23VR</p>
                     </div>
                     <div class="grafica-cabecera-descripcion">
                         <label for="">
@@ -287,7 +289,7 @@
                     </div>
                 </div>
                 <div class="grafica">
-                    <div id="container" style="width:100%; height:400px;"></div>
+                    <div id="container" class="grafo"></div>
                 </div>
             </section>
         </main>

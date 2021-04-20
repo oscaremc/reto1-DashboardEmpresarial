@@ -29,17 +29,24 @@ header .bordetitulo {
     border: 1px solid;
     border-radius: 50%;
 }
-.menu nav {
-    background-color: #EAEAEA;
+.menu {
+    display: block;
 }
-.menu nav ul{
-    width: 10vw;
-    height: 90vh;
-    max-width: 75px;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
+.menu nav{
+    display: inline-flex;
+    width: 100%;
+    background-color: transparent;
+}
+.menu nav ul {
+    display: inline-flex;
+    height: auto;
+    width: 100%;
+    flex-direction: row-reverse;
     justify-content: space-around;
+    max-width: 100%;
+}
+.menu nav ul li {
+    display: inline-flex;
 }
 .menu nav li {
     cursor: pointer;

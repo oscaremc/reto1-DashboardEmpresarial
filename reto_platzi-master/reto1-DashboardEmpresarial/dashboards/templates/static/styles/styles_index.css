@@ -5,20 +5,32 @@
 }
 html{
     font-size: 62.5%;
-    background-color: #F2EDA2;
     font-family: 'Roboto Condensed', sans-serif;
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .menu{
     display: flex;
-    background-color: #F2F0CE;
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 header{
     height: 10vh;
-    padding-left: 15px;
     white-space: pre-line;
+    text-align: center;
+}
+header .bordetitulo {
+    width: 90%;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 50%;
 }
 .menu nav {
-    background-color: #D9D2D2;
+    background-color: #EAEAEA;
 }
 .menu nav ul{
     width: 10vw;
@@ -28,6 +40,9 @@ header{
     text-align: center;
     flex-direction: column;
     justify-content: space-around;
+}
+.menu nav li {
+    cursor: pointer;
 }
 main .container-main {
     width:90vw;
@@ -44,12 +59,14 @@ main .container-main--titulo{
     display: flex;
     justify-content: center;
     align-self: center;
-    height: 90px;
+    height: 20%;
     font-size: 16px;
     font-weight: 400;
 }
-main .container-main--titulo h2 {
+main .container-main--titulo p {
     margin: auto;
+    font-size: 35px;
+    font-weight: 700;
 }
 .container-main--valores{
     width: 90%;
@@ -59,6 +76,8 @@ main .container-main--titulo h2 {
     display: flex;
     margin: 0 auto;
     justify-content: center;
+    margin-bottom: 50px;
+
 }
 .main-valores-card {
     display: flex;
@@ -82,6 +101,13 @@ main .container-grafica {
     grid-column: 3 / 6 ;
     grid-row: 1 / 2;
 }
+.container-grafica-cabecera label{
+    font-weight: 700;
+    font-size: 16px;
+}
+.container-grafica-cabecera p{
+    font-size: 18px;
+}
 .container-main .grafica {
     grid-column: 3 / 6;
     grid-row: 2 / 6;
@@ -101,18 +127,9 @@ main .container-grafica {
     font-size: 14px;
     font-weight: 700;
 }
-.grafica-cabecera-uuid h3 {
+.grafica-cabecera-uuid p {
     margin-left: 20px;
-}
-.menu nav .mas  .buttonCrear{
-    background: none;
-    border-radius: 50%;
-    border-style: solid;
-    border-color: #F2E205;
-    background-color: #F2E205;
-    box-shadow: 1px 1px 2px #000;
-    padding: 5px;
-    width: 40px;
+    font-size: 20px;
 }
 .menu nav .mas img {
     width: 28px;
@@ -127,30 +144,49 @@ nav .button button {
 nav li a {
     text-decoration: none;
 }
-nav li .edit {
-    margin: auto;
-    background-color: rgb(4, 4, 192);
-    color: white;
-    box-shadow: 1px 1px 1px #000;
+nav li .botton {
+    border-radius: 10%;
     width: 60px;
-    border-radius: 3px;
-    border: none;
-    padding: 8px;
-    font-size: 16px;
-}
-nav li .home {
+    height: 50px;
     margin: auto;
-    background-color: green;
-    color: white;
-    box-shadow: 1px 1px 1px #000;
-    width: 60px;
-    border-radius: 3px;
-    border: none;
-    padding: 8px;
-    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+
 }
-nav li .eliminar {
-    background-color: rgb(207, 5, 5);
-    color: white;
-    box-shadow: 1px 1px 1px #000;
+nav li .home:hover {
+    background-color: #17b978;
+    border-radius: 30%;
+    font-size: 16px;
+    font-weight: 500;
+    color: whitesmoke;
+}
+nav li .editar:hover {
+    background-color: #51c4d3;
+    border-radius: 30%;
+    font-size: 16px;
+    font-weight: 500;
+    color: whitesmoke;
+}
+nav li .eliminar:hover {
+    background-color: #fb3640;
+    border-radius: 30%;
+    font-size: 16px;
+    font-weight: 500;
+    color: whitesmoke;
+}
+nav li .bottonMas:hover {
+    background-color: #ffcc29;
+    border-radius: 30%;
+    font-size: 16px;
+    font-weight: 500;
+    color: whitesmoke;
+}
+.grafo{
+    width:100%; 
+    height:415px;
 }

@@ -6,9 +6,6 @@
 html{
     font-size: 62.5%;
 }
-header{
-    background-color: #0000ff;
-}
 .menu{
     display: block;
 }
@@ -24,15 +21,33 @@ header{
 }
 .menu nav li{
     list-style: none;
-
+}
+.menu nav ul{
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
 }
 main .container-main{
     width: 100vw;
     display: block;
     height: auto;
 }
-.container--main--texto {
+main .container-main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+}
+main .container-main--titulo p{
     width: 100%;
+}
+main .container-main .container--main--texto{
+    display: block;
+    align-self: auto;
+    text-align: center;
+}
+main .container--main--texto {
+    grid-column: 1;
+    grid-row: 1;
+    display: block;
 }
 .container-main .container--main--texto{
     margin: 0;
@@ -47,4 +62,16 @@ main .container-main{
     border: solid blue;
     width: 100%;
     height: 300px;
+}
+.container-grafica-cabecera{
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+main .container-main--valores{
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+main .container-main .grafica{
+    grid-column: 1 / 2;
+    grid-row: 3;
 }
