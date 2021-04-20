@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-STATICFILES_DIRS=['C:/Users/USER/Documents/proyecto/django\dashB/reto_platzi-master/reto1-DashboardEmpresarial/dashboards/templates/static']
+STATICFILES_DIRS=['C:/Users/luisl/OneDrive/Documentos/programacion/proyecto/reto1-DashboardEmpresarial/reto_platzi-master/reto1-DashboardEmpresarial/dashboards/templates/static']
 
 
 # Application definition
